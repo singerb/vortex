@@ -1,0 +1,8 @@
+{
+    "input_dir": "example-site/",
+    "output_dir": "example-site/site/",
+    "static_dir": "example-site/static/",
+    "theme_dir": "themes/vortex/",
+    "site_name": "Vortex Example",
+    "pygments_style": "solarized"
+}

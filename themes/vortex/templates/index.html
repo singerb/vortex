@@ -1,0 +1,27 @@
+{% extends base.html %}
+
+{% block content %}
+    {% for article in articles %}
+    <div class="article">
+        <h1><a href="{{ config.article_web_path(article.slug) }}">{{ article.title }}</a></h1>
+        <p class="byline">By {{ article.author }}, on {{ article.timestamp_str }}</p>
+        {{ article.summary_html }}
+        <span class="readmore"><p><a href="{{ config.article_web_path(article.slug) }}">Read More...</a></p></span>
+    </div>
+    {% end %}
+{% end %}
+
+{% block footer %}
+    <p class="page-nav">
+    {% if index_num != 1 %}
+        {% if index_num == 2 %}
+    <a class="prev" href="/">Previous</a>
+        {% else %}
+    <a class="prev" href="/{{ index_num + 1 }}">Previous</a>
+        {% end %}
+    {% end %}
+    {% if index_num != max_index_num %}
+    <a class="next" href="/{{ index_num + 1 }}">Next</a>
+    {% end %}
+    </p>
+{% end %}

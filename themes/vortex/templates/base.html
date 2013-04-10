@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>{% block title %}{{ config.site_name }}{% end %}</title>
+        <link rel="stylesheet" href="{{ pygments_cssfilename }}" />
+        <link href='http://fonts.googleapis.com/css?family=Source+Code+Pro:300|Merriweather:300|Lato:100,300' rel='stylesheet' type='text/css' />
+        <link rel="stylesheet" href="/base.css" />
+        <link rel="shortcut icon" href="/favicon.ico" />
+    </head>
+    <body>
+        <div class="container">
+            <div class="page-header">
+                {% block header %}
+                <h1>{{ config.site_name }}</h1>
+                {% end %}
+            </div>
+            <div class="page">
+                <div class="content">
+                    {% block content %}
+                    {{ content }}
+                    {% end %}
+                </div>
+                <div class="sidebar">
+                    {% block sidebar %}
+                    {{ sidebar_html }}
+                    {% end %}
+                </div>
+            </div>
+            <div class="clear">
+            <div class="page-footer">
+                {% block footer %}
+                {% end %}
+            </div>
+        </div>
+        <script type="text/javascript" src="/retina.js"></script>
+    </body>
+</html>

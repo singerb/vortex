@@ -1,0 +1,8 @@
+<p>Recent Articles: </p>
+<ul>
+{% for article in articles %}
+    <li><a href="{{ config.article_web_path(article.slug) }}">{{ article.title }}</a></li>
+{% end %}
+</ul>
+
+{{ sidebar.html }}

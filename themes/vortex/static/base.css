@@ -1,0 +1,336 @@
+@font-face {
+    font-family: "Entypo";
+    src: url("entypo.eot");
+    src: local("Entypo"),
+        url("entypo.woff") format("woff"),
+        url("entypo.svg") format("svg");
+}
+
+@font-face {
+    font-family: "Entypo Social";
+    src: url("entypo-social.eot");
+    src: local("Entypo Social"),
+        url("entypo-social.woff") format("woff"),
+        url("entypo-social.svg") format("svg");
+}
+
+html {
+    font-size: 100%;
+    height: 100%;
+    width: 100%;
+}
+
+body {
+    height: 100%;
+    font-family: 'Merriweather', serif;
+    font-weight: 300;
+    font-size: 0.75em;
+    line-height: 1.5;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    color: #586e75;
+}
+
+p {
+    margin-top: 1.5em;
+    margin-bottom: 0;
+}
+
+p + p {
+    margin-top: 0;
+    text-indent: 1.5em;
+}
+
+.sidebar p + p {
+    margin-top: 1.5em;
+    text-indent: 0;
+}
+
+.readmore p + p {
+    margin-top: 1.5em;
+    text-indent: 0;
+}
+
+.content p:last-of-type {
+    margin-bottom: 1.5em;
+}
+
+.clear {
+    clear: both;
+    height: 4.0em;
+}
+
+.container {
+    min-height: 100%;
+    position: relative;
+}
+
+.page {
+    margin: 2.0em 2.0em;
+    padding-bottom: 4.0em;
+}
+
+.page-header h1 {
+    text-align: center;
+    color: white;
+    word-spacing: 0.125em;
+    font-size: 3.0em;
+    margin-bottom: 0.5em;
+}
+
+.page-header h1.with-byline {
+    margin-bottom: 0.0em;
+}
+
+h1 {
+    font-size: 2.0em;
+    margin-bottom: 1.0em;
+}
+h2 {
+    font-size: 1.5em;
+    margin-bottom: 0.75em;
+}
+h3, h4, h5, h6 {
+    font-size: 1.0em;
+    margin-bottom: 0.5em;
+}
+
+.content {
+    width: 90%;
+}
+
+.sidebar {
+    width: 25%;
+}
+
+/* breakpoint at 900px - drop the sidebar to the bottom, expand the content, downsize the headers */
+@media only screen and (min-width: 900px) {
+    .page {
+        margin: 2.0em 6.0em;
+    }
+
+    h1 {
+        font-size: 3.0em;
+        margin-bottom: 0.75em;
+    }
+    h2 {
+        font-size: 2.0em;
+        margin-bottom: 1.0em;
+    }
+    h3, h4, h5, h6 {
+        font-size: 1.5em;
+        margin-bottom: 0.75em;
+    }
+
+    .page-header h1 {
+        font-size: 4.0em;
+    }
+
+    .content {
+        float: left;
+        width: 70%;
+        margin-right: 6.0em;
+    }
+
+    .sidebar {
+        float: left;
+        width: 15%;
+    }
+}
+
+.page-header {
+    /*background-color: #073642;*/
+    background-image: linear-gradient(top, rgb(147,161,161) 0%, rgb(88,110,117) 25%, rgb(7,54,66) 75%);
+    background-image: -o-linear-gradient(top, rgb(147,161,161) 0%, rgb(88,110,117) 25%, rgb(7,54,66) 75%);
+    background-image: -moz-linear-gradient(top, rgb(147,161,161) 0%, rgb(88,110,117) 25%, rgb(7,54,66) 75%);
+    background-image: -webkit-linear-gradient(top, rgb(147,161,161) 0%, rgb(88,110,117) 25%, rgb(7,54,66) 75%);
+    background-image: -ms-linear-gradient(top, rgb(147,161,161) 0%, rgb(88,110,117) 25%, rgb(7,54,66) 75%);
+    padding: 6.0em 0 1.0em 0;
+    width: 100%;
+}
+
+.page-footer {
+    clear: both;
+    background-color: #eee8d5;
+    position: absolute;
+    bottom :0;
+    width: 100%;
+    height: 4.0em;
+}
+
+.caps {
+    font-size: 0.9em;
+    letter-spacing: 0.1em;
+}
+
+.byline {
+    font-size: 0.85em;
+    font-style: italic;
+    margin-top: 0;
+    margin-bottom: 1.0em;
+}
+
+.page-header .byline {
+    color: white;
+    text-align: center;
+}
+
+.page-nav {
+    text-align: center;
+    font-family: 'Lato', sans-serif;
+    font-weight: 300;
+}
+
+.page-nav a {
+    padding-left: 2.0em;
+    padding-right: 2.0em;
+}
+
+.article {
+    margin-bottom: 4.0em;
+}
+
+.article h1 {
+    margin-bottom: 0.0em;
+}
+.article h2 {
+    margin-bottom: 0.0em;
+}
+
+ul {
+    list-style: none;
+    margin-left: 1.5em;
+    padding-left: 1.5em;
+    text-indent: -1.375em;
+}
+
+ul li:before {
+    content: "\00bb \00a0";
+}
+
+li {
+    line-height: 1.5em;
+}
+
+hr {
+    width: 50%;
+    color: #073642;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Lato', sans-serif;
+    font-weight: 300;
+    padding: 0;
+    margin-bottom: 1.0em;
+    text-transform: uppercase;
+}
+
+.highlight {
+    -webkit-text-size-adjust: 100%;
+    -moz-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+    display: inline-block;
+    padding: 0;
+    margin: 1.5em 0em;
+}
+
+pre, code {
+    font-family: 'Source Code Pro', monospace;
+    font-weight: 300;
+    line-height: 1.25em;
+    white-space: pre-wrap;
+}
+
+pre {
+    padding: 0em 1.0em;
+}
+
+img {
+    min-width: 100%;
+    max-width: 100%;
+    margin-top: 1.5em;
+}
+
+.image {
+    margin: 0 auto;
+}
+
+.caption {
+    text-align: center;
+    font-style: italic;
+    font-size: 0.85em;
+    margin-top: 0;
+}
+
+a {
+    color: #cb4b16;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.sidebar a[href^="http"]:after {
+    font-family: 'Entypo';
+    font-size: 2.5em;
+    line-height: 0.4em;
+    content: "\00a0 \1f30e";
+}
+
+.sidebar a[href^="/colophon"]:after {
+    font-family: 'Entypo';
+    font-size: 2.5em;
+    line-height: 0.4em;
+    content: "\00a0 \e800";
+}
+
+.sidebar a[href^="/rss"]:after {
+    font-family: 'Entypo';
+    font-size: 2.5em;
+    line-height: 0.4em;
+    content: "\00a0 \e73a";
+}
+
+.sidebar a[href="/"]:after {
+    font-family: 'Entypo';
+    font-size: 2.5em;
+    line-height: 0.4em;
+    content: "\00a0 \2302";
+}
+
+.sidebar a[href^="https://github"]:after {
+    font-family: 'Entypo Social';
+    font-size: 2.5em;
+    line-height: 0.4em;
+    content: "\00a0 \f300";
+}
+
+.sidebar a[href^="http://twitter"]:after {
+    font-family: 'Entypo Social';
+    font-size: 2.5em;
+    line-height: 0.4em;
+    content: "\00a0 \f309";
+}
+
+.sidebar a[href^="http://www.flickr"]:after {
+    font-family: 'Entypo Social';
+    font-size: 2.5em;
+    line-height: 0.4em;
+    content: "\00a0 \f303";
+}
+
+.page-footer a.next:after {
+    font-family: 'Entypo';
+    font-size: 2.5em;
+    line-height: 0.4em;
+    content: "\00a0 \e762";
+}
+
+.page-footer a.prev:before {
+    font-family: 'Entypo';
+    font-size: 2.5em;
+    line-height: 0.4em;
+    content: "\e761 \00a0";
+}
