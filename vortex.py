@@ -74,7 +74,7 @@ class Vortex(object):
                 dest = os.path.join(self._config.images_output_dir, "%s@2x%s" % (r, e))
                 small_dest = os.path.join(self._config.images_output_dir, f)
 
-                im = Image.open(dest)
+                im = Image.open(src)
 
                 if im.size[0] > 2000 or im.size[1] > 2000:
                     shutil.copy(src, dest)

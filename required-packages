@@ -6,7 +6,12 @@ pygments
 typogrify
 smartypants
 PyRSS2Gen
+pil
 
 From web:
 
 Solarized light pygments theme
+
+pil build notes:
+
+Needs gcc, python-dev to build (on ubuntu precise).
